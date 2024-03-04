@@ -1,18 +1,18 @@
 CREATE DATABASE IF NOT EXISTS book_store_db;
 
 CREATE TABLE IF NOT EXISTS book_store_db.list_of_books (
-	N 			int,
-    Code 		int,
-    New			varchar(20),
-    Title		varchar(255),
-    Price		varchar(20),
-    Publisher	varchar(255),
-    Pages		int,
-    Format		varchar(20),
-    Date		varchar(20),
-    Edition		int,
-    Topic		varchar(255),
-    Category	varchar(255)
+	N		int,
+	Code		int,
+	New		varchar(20),
+	Title		varchar(255),
+	Price		varchar(20),
+	Publisher	varchar(255),
+	Pages		int,
+	Format		varchar(20),
+	Date		varchar(20),
+	Edition		int,
+	Topic		varchar(255),
+	Category	varchar(255)
 );
 
 INSERT INTO book_store_db.list_of_books (N, Code, New, Title, Price, Publisher, Pages, Format, Date, Edition, Topic, Category) VALUES
@@ -45,12 +45,12 @@ DROP DATABASE IF EXISTS book_store_db;
 CREATE DATABASE IF NOT EXISTS book_store_V2_db;
 
 CREATE TABLE IF NOT EXISTS book_store_V2_db.list_of_books (
-	N 			int NOT NULL,
+	N 		int NOT NULL,
 	Code 		int NOT NULL,
-	New			varchar(20) NOT NULL,
+	New		varchar(20) NOT NULL,
 	Title		varchar(255) NOT NULL,
 	Price		varchar(20) DEFAULT '0',
-	Publisher 	varchar(255) NOT NULL,
+	Publisher	varchar(255) NOT NULL,
 	Pages		int NOT NULL,
 	Format		varchar(20) NULL,
 	Date		varchar(20) NULL,

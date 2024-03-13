@@ -14,19 +14,19 @@
 
    c. Створення таблиці на основі універсального відношення. Команда для створення таблиці повинна містити головний ключ, обмеження типу null / not null, default, check.
     - CREATE TABLE IF NOT EXISTS list_of_books (
-        N 		    INT UNSIGNED NOT NULL,
-	    Code 	    INT UNSIGNED NOT NULL,
-	    New		    BOOLEAN NOT NULL,
-	    Title		VARCHAR(100) NOT NULL,
-	    Price		DECIMAL(8, 2) DEFAULT 0,
-	    Publisher 	VARCHAR(50) NOT NULL,
-	    Pages		INT UNSIGNED NOT NULL,
-	    Format		VARCHAR(20) NULL,
-	    Date		DATE NULL,
-	    Edition		INT UNSIGNED NOT NULL,
-	    Topic		VARCHAR(50) NOT NULL,
-	    Category	VARCHAR(50) NOT NULL,
-	    PRIMARY KEY (N),
+        N 		INT UNSIGNED NOT NULL,
+	Code 	    	INT UNSIGNED NOT NULL,
+    	New		BOOLEAN NOT NULL,
+	Title		VARCHAR(100) NOT NULL,
+	Price		DECIMAL(8, 2) DEFAULT 0,
+	Publisher 	VARCHAR(50) NOT NULL,
+	Pages		INT UNSIGNED NOT NULL,
+	Format		VARCHAR(20) NULL,
+	Date		DATE NULL,
+	Edition		INT UNSIGNED NOT NULL,
+	Topic		VARCHAR(50) NOT NULL,
+	Category	VARCHAR(50) NOT NULL,
+	PRIMARY KEY (N),
     	CHECK (New=TRUE or New=FALSE),
         CHECK (N>0 AND Code>0 AND Pages>0 AND Edition>0)
        );

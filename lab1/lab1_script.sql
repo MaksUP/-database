@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS list_of_books (
 	Topic		VARCHAR(50) NOT NULL,
 	Category	VARCHAR(50) NOT NULL,
 	PRIMARY KEY (N),
-    	CHECK (New=TRUE or New=FALSE),
+    	CHECK (New=TRUE OR New=FALSE),
 	CHECK (N>0 AND Code>0 AND Pages>0 AND Edition>0)
 );
 
